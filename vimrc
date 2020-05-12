@@ -1,4 +1,4 @@
-
+"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 "                       __   _ _ _ __ ___  _ __ ___                            "
 "                       \ \ / / | '_ ` _ \| '__/ __|                           "
 "                        \ V /| | | | | | | | | (__                            "
@@ -89,7 +89,7 @@ set backspace=indent,eol,start              " backspace removes all (indents, EO
 set scrolloff=10                            " let 10 lines before/after cursor during scroll
 
 if has('unnamedplus')
-    set clipboard=unnamedplus                   " use system clipboard
+    set clipboard=unnamedplus               " use system clipboard
 else
     set clipboard+=unnamed
 endif
@@ -161,8 +161,8 @@ let g:riv_disable_folding=1
 "=====================================================
 
 " python executables for different plugins
-let g:pymode_python = 'python'
-let g:syntastic_python_python_exec = 'python'
+let g:pymode_python = 'python3'
+let g:syntastic_python_python_exec = 'python3'
 
 " rope
 let g:pymode_rope=0
@@ -242,7 +242,7 @@ let g:syntastic_python3_checkers=['flake8', 'pydocstyle', 'python']
 " YouCompleteMe
 set completeopt-=preview
 
-let g:ycm_python_binary_path = '/usr/bin/python'
+let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_global_ycm_extra_conf='~/.vim/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0
 
